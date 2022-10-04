@@ -1,0 +1,42 @@
+$f-family: 'Roboto Condensed', sans-serif;
+
+$line-height-regular: 1.6;
+$line-height-little: 0.9;
+
+$fw-light: 300;
+$fw-regular: 400;
+$fw-medium: 500;
+$fw-bold: 700;
+
+$fs-h1: 100px;
+$fs-h2: 48px;
+$fs-h3: 36px;
+$fs-h4: 24px;
+$fs-btn: 16px;
+$fs-text: 16px;
+$fs-subtext: 15px;
+
+body {
+  font-family: $f-family;
+  font-size: $fs-text;
+  font-weight: $fw-regular;
+  line-height: $line-height-regular;
+}
+
+h1 {
+  font-size: $fs-h1;
+  font-weight: $fw-bold;
+  line-height: $line-height-little;
+}
+
+h2 {
+  font-size: $fs-h2;
+}
+
+h3 {
+  font-size: $fs-h3;
+}
+
+h4 {
+  font-size: $fs-h4;
+}
