@@ -1,14 +1,14 @@
 $f-family: 'Roboto Condensed', sans-serif;
 
 $line-height-regular: 1.6;
-$line-height-little: 0.9;
+$line-height-little: 0.77;
 
 $fw-light: 300;
 $fw-regular: 400;
 $fw-medium: 500;
 $fw-bold: 700;
 
-$fs-h1: 100px;
+$fs-h1: 106px;
 $fs-h2: 48px;
 $fs-h3: 36px;
 $fs-h4: 24px;
@@ -23,10 +23,18 @@ body {
   line-height: $line-height-regular;
 }
 
+h1, h2, h3, h4,
+p {
+  padding: 0;
+  margin: 0;
+}
+
 h1 {
   font-size: $fs-h1;
   font-weight: $fw-bold;
   line-height: $line-height-little;
+  text-transform: uppercase;
+  color: $clr-white;
 }
 
 h2 {
@@ -39,4 +47,8 @@ h3 {
 
 h4 {
   font-size: $fs-h4;
+}
+
+.accent-text {
+  color: $clr-yellow;
 }

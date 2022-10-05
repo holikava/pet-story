@@ -1,0 +1,12 @@
+.header {
+  display: flex;
+  align-items: center;
+
+  &-bg {
+    background-color: $clr-black;
+  }
+
+  &__logo {
+    padding: 14px 0;
+  }
+}
