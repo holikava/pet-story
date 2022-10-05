@@ -176,3 +176,19 @@ h3 {
 h4 {
   font-size: 24px;
 }
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  list-style: none;
+}
+.nav__link {
+  color: rgb(253, 253, 255);
+  font-weight: 500;
+  text-decoration: none;
+  padding: 29px;
+  transition: color ease-in-out 500ms;
+}
+.nav__link:hover {
+  color: rgb(249, 128, 75);
+}
