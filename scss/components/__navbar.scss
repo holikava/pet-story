@@ -9,8 +9,8 @@
     font-weight: $fw-medium;
     text-decoration: none;
     padding: 29px;
-    transition: color ease-in-out 500ms;
-
+    @include transition;
+    
     &:hover {
       color: $clr-orange;
     }

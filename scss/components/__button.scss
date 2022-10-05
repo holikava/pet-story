@@ -1,0 +1,32 @@
+.btn {
+  text-transform: uppercase;
+  font-weight: $fw-medium;
+  color: $clr-white;
+  background: $clr-btn-gradient, $clr-orange;
+  vertical-align: middle;
+  width: 298px;
+  height: 54px;
+  cursor: pointer;
+  border: none;
+  @include transition;
+
+  &:hover {
+    background: $clr-dark-orange;
+  }
+
+  &:active {
+    background: $clr-green;
+  }
+
+  &:visited {
+    background: $clr-gray;
+  }
+
+  &--round {
+    border-radius: 25px;
+  }
+
+  &--square {
+    border-radius: 5px;
+  }
+}
