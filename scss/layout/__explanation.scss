@@ -1,0 +1,27 @@
+.explanation {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding-top: 140px;
+  padding-bottom: 180px;
+
+  &-bg {
+    background-image: url(../../assets/image/explanation-bg-1.png);
+    background-position: top right;
+    background-repeat: no-repeat;
+  }
+
+  &__content {
+    flex-basis: 40%;
+  }
+
+  &__title {
+    margin-bottom: 15px;
+  }
+
+  &__subtitle {
+    font-weight: $fw-regular;
+    margin-top: 30px;
+    margin-bottom: 15px;
+  }
+}

@@ -1,6 +1,6 @@
 $f-family: 'Roboto Condensed', sans-serif;
 
-$line-height-regular: 1.6;
+$line-height-regular: 1.4;
 $line-height-little: 0.77;
 
 $fw-light: 300;
@@ -17,6 +17,7 @@ $fs-text: 16px;
 $fs-subtext: 15px;
 
 body {
+  color: $clr-black-blue;
   font-family: $f-family;
   font-size: $fs-text;
   font-weight: $fw-regular;

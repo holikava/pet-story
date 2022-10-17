@@ -158,10 +158,11 @@ legend {
 }
 
 body {
+  color: rgb(51, 59, 65);
   font-family: "Roboto Condensed", sans-serif;
   font-size: 16px;
   font-weight: 400;
-  line-height: 1.6;
+  line-height: 1.4;
 }
 
 h1, h2, h3, h4,
@@ -280,4 +281,28 @@ h4 {
   height: 465px;
   border-radius: 50%;
   background: rgb(249, 128, 75) linear-gradient(113.96deg, #F9804B 1.49%, #FE9013 101.44%);
+}
+
+.explanation {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding-top: 140px;
+  padding-bottom: 180px;
+}
+.explanation-bg {
+  background-image: url(../../assets/image/explanation-bg-1.png);
+  background-position: top right;
+  background-repeat: no-repeat;
+}
+.explanation__content {
+  flex-basis: 40%;
+}
+.explanation__title {
+  margin-bottom: 15px;
+}
+.explanation__subtitle {
+  font-weight: 400;
+  margin-top: 30px;
+  margin-bottom: 15px;
 }
