@@ -1,0 +1,95 @@
+.carousel {
+  position: relative;
+  display: grid;
+  gap: 20px 30px;
+  grid-template-columns: repeat(3, 1fr);
+  margin-bottom: 80px;
+
+  &-bg {
+    background: url(../../assets/image/explanation-bg-2.png) bottom right,
+    url(../../assets/image/explanation-bg-3.png) bottom left;
+    background-repeat: no-repeat;
+  }
+
+  &::before {
+    display: block;
+    content: "";
+    cursor: pointer;
+    width: 62px;
+    height: 62px;
+    border-radius: 50%;
+    position: absolute;
+    right: calc(-62px - 20px);
+    top: calc(50% - 31px);
+    background: url(../../assets/icon/arrow-little.png) center no-repeat, $clr-orange;
+  }
+
+  &::after {
+    display: block;
+    content: "";
+    cursor: pointer;
+    width: 62px;
+    height: 62px;
+    border-radius: 50%;
+    position: absolute;
+    left: calc(-62px - 20px);
+    top: calc(50% - 31px);
+    transform: rotate(180deg);
+    background: url(../../assets/icon/arrow-little.png) center no-repeat, $clr-orange;
+  }
+
+  &__btn {
+    text-align: center;
+    padding-bottom: 100px;
+  }
+}
+
+.card {
+  border: 1px solid $clr-orange;
+  border-radius: 5px;
+  background-color: $clr-white;
+
+  &__image {
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+  }
+
+  &__text {
+    position: relative;
+    padding-left: 16px;
+  }
+
+  &__link {
+    font-weight: $fw-bold;
+    color: $clr-black;
+    text-transform: uppercase;
+  }
+
+  &__subtite {
+    font-size: $fs-subtext;
+    font-weight: $fw-light;
+    padding-bottom: 16px;
+  }
+}
+
+.vegies-eater::after {
+  display: block;
+  content: "";
+  width: 33px;
+  height: 37px;
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  background-image: url(../../assets/icon/vegies-icon.png);
+}
+
+.meat-eater::after {
+  display: block;
+  content: "";
+  width: 48px;
+  height: 38px;
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  background-image: url(../../assets/icon/meat-icon.png);
+}

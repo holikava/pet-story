@@ -1,0 +1,80 @@
+.deal {
+  text-align: center;
+  background-color: rgba(253, 253, 255, 0.5);
+  border-radius: 20px;
+  padding-bottom: 60px;
+
+  &-bg {
+    background: $clr-bg-gradient;
+    padding-top: 70px;
+    padding-bottom: 100px;
+  }
+
+  &__content {
+    max-width: 90%;
+    padding-top: 40px;
+    margin: 0 auto 60px;
+  }
+
+  &__title {
+    font-weight: $fw-medium;
+    color: $clr-orange;
+    margin-bottom: 30px;
+  }
+
+  &__text--bigsize {
+    font-size: 24px;
+    margin-bottom: 40px;
+  }
+}
+
+.infographic {
+
+  &__title {
+    font-weight: $fw-medium;
+    margin-bottom: 40px;
+  }
+
+  &__block {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    max-width: 70%;
+    margin: 0 auto;
+    margin-bottom: 60px;
+  }
+
+  &__card {
+    flex-basis: 168px;
+  }
+
+  &__image {
+    position: relative;
+    display: flex;
+    width: 168px;
+    height: 168px;
+    background-color: $clr-white;
+    border: 1px solid $clr-orange;
+    border-radius: 5px;
+    margin-bottom: 30px;
+  }
+
+  &__image::before {
+    display: block;
+    content: "";
+    position: absolute;
+    top: calc(168px/2 - 37px/2); // parent height - arrow height
+    right: -50%;
+    width: 70px;
+    height: 37px;
+    background-image: url(../../assets/icon/arrow.svg);
+  }
+
+  &__image > img {
+    margin: auto;
+  }
+}
+
+.last-child::before { // Дополнительный класс, чтобы достучаться до последней стрелки в .infographic__image::before
+  display: none;
+}

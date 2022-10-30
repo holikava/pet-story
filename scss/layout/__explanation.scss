@@ -1,6 +1,7 @@
 .explanation {
   display: flex;
   justify-content: space-between;
+  align-items: center;
   flex-wrap: wrap;
   padding-top: 140px;
   padding-bottom: 180px;
@@ -16,6 +17,8 @@
   }
 
   &__title {
+    line-height: 0.9;
+    font-weight: $fw-medium;
     margin-bottom: 15px;
   }
 

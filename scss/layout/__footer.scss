@@ -1,0 +1,103 @@
+.footer {
+  background-color: $clr-black;
+  padding-top: 40px;
+  padding-bottom: 50px;
+
+  &--grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-areas: 
+    "logo logo subscribe"
+    "btn btn btn"
+    "social__link navbar copyright";
+  }
+
+  &__logo {
+    grid-area: logo;
+    margin-bottom: 68px;
+  }
+
+  &__subscribe {
+    grid-area: subscribe;
+  }
+
+  &__btn {
+    grid-area: btn;
+    margin-bottom: 44px;
+  }
+
+  &__social {
+    grid-area: social__link;
+  }
+
+  &__nav {
+    grid-area: navbar;
+    align-self: end;
+  }
+
+  &__copyright {
+    grid-area: copyright ;
+    justify-self: end;
+    align-self: end;
+    max-width: 61%;
+  }
+}
+
+.form {
+
+  &__legend {
+    font-size: $fs-h4;
+    color: $clr-white;
+    margin-bottom: 14px;
+  }
+
+  &__email {
+    color: $clr-white;
+    border: 1px solid $clr-orange;
+    background-color: $clr-black;
+    min-width: 228px;
+    padding: 10px;
+  }
+
+  &__submit {
+    background-color: $clr-gray-light;
+    padding: 10px 39px;
+    border: 1px solid $clr-black;
+    border-radius: 5px;
+  }
+
+}
+
+.social {
+
+  &__links-block {
+    margin-bottom: 10px;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+
+  &__logo {
+    display: inline-flex;
+    width: 26px;
+    height: 26px;
+    border-radius: 50%;
+    background-color: $clr-gray;
+    vertical-align: middle;
+
+    & > img {
+      margin: auto;
+    }
+  }
+
+  &__link {
+    color: $clr-white;
+    padding-left: 12px;
+  }
+}
+
+.footer__nav * .nav__link {
+  margin: 0;
+  padding: 0;
+}
