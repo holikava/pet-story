@@ -45,8 +45,7 @@
 }
 
 .card {
-  border: 1px solid $clr-orange;
-  border-radius: 5px;
+  @include border(5px);
   background-color: $clr-white;
 
   &__image {

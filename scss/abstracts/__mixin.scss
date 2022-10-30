@@ -1,3 +1,8 @@
 @mixin transition {
   transition: all ease-in-out 300ms;
 }
+
+@mixin border ($border-radius) {
+  border: 1px solid $clr-orange;
+  border-radius: $border-radius;
+}

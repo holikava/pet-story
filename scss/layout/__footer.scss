@@ -52,8 +52,8 @@
   }
 
   &__email {
+    @include border(5px);
     color: $clr-white;
-    border: 1px solid $clr-orange;
     background-color: $clr-black;
     min-width: 228px;
     padding: 10px;

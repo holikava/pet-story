@@ -473,13 +473,13 @@ h4 {
   flex-basis: 168px;
 }
 .infographic__image {
+  border: 1px solid rgb(249, 128, 75);
+  border-radius: 5px;
   position: relative;
   display: flex;
   width: 168px;
   height: 168px;
   background-color: rgb(253, 253, 255);
-  border: 1px solid rgb(249, 128, 75);
-  border-radius: 5px;
   margin-bottom: 30px;
 }
 .infographic__image::before {
@@ -519,12 +519,12 @@ h4 {
 }
 
 .autor {
+  border: 1px solid rgb(249, 128, 75);
+  border-radius: 20px;
   font-size: 15px;
   flex-basis: 268px;
   color: rgb(118, 116, 116);
   background-color: rgb(241, 243, 242);
-  border: 1px solid rgb(249, 128, 75);
-  border-radius: 20px;
   padding: 15px;
 }
 .autor__info {
@@ -585,8 +585,9 @@ h4 {
   margin-bottom: 14px;
 }
 .form__email {
-  color: rgb(253, 253, 255);
   border: 1px solid rgb(249, 128, 75);
+  border-radius: 5px;
+  color: rgb(253, 253, 255);
   background-color: rgb(17, 17, 21);
   min-width: 228px;
   padding: 10px;

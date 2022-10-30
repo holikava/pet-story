@@ -49,13 +49,12 @@
   }
 
   &__image {
+    @include border(5px);
     position: relative;
     display: flex;
     width: 168px;
     height: 168px;
     background-color: $clr-white;
-    border: 1px solid $clr-orange;
-    border-radius: 5px;
     margin-bottom: 30px;
   }
 

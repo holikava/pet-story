@@ -1,6 +1,5 @@
 .testimonials {
 
-
   &-bg {
     background: url(../../assets/image/testimonials-bg.png) right bottom;
     background-repeat: no-repeat;
@@ -20,28 +19,14 @@
     justify-content: space-around;
     margin-bottom: 60px;
   }
-
-  // &__block::before {
-  //   position: absolute;
-  //   bottom: -31px;
-  //   display: block;
-  //   content: "";
-  //   width: 550px;
-  //   height: 8px;
-
-  //   border: 1px solid $clr-orange;
-  //   border-radius: 5px;
-  //   margin: 0 auto;
-  // }
 }
 
 .autor {
+  @include border(20px);
   font-size: $fs-subtext;
   flex-basis: 268px;
   color: $clr-gray;
   background-color: $clr-gray-light;
-  border: 1px solid $clr-orange;
-  border-radius: 20px;
   padding: 15px;
 
   &__info {
