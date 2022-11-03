@@ -257,10 +257,14 @@ h4 {
   background: rgb(228, 114, 9);
 }
 .btn:active {
-  background: rgb(75, 146, 0);
+  color: rgb(253, 253, 255);
+  background-color: rgb(75, 146, 0);
+  border: none;
 }
-.btn:visited {
-  background: rgb(118, 116, 116);
+.btn:disabled {
+  color: rgb(253, 253, 255);
+  background-color: rgb(118, 116, 116);
+  border: none;
 }
 .btn--round {
   border-radius: 25px;
@@ -592,11 +596,31 @@ h4 {
   min-width: 228px;
   padding: 10px;
 }
+.form__email:active {
+  color: rgb(253, 253, 255);
+  background-color: inherit;
+  border: 1px solid rgb(75, 146, 0);
+}
+.form__email:disabled {
+  color: rgb(211, 20, 20);
+  background-color: inherit;
+  border: 1px solid rgb(211, 20, 20);
+}
 .form__submit {
   background-color: rgb(241, 243, 242);
   padding: 10px 39px;
   border: 1px solid rgb(17, 17, 21);
   border-radius: 5px;
+}
+.form__submit:active {
+  color: rgb(75, 146, 0);
+  background-color: rgb(241, 243, 242);
+  border: 1px solid rgb(75, 146, 0);
+}
+.form__submit:disabled {
+  color: rgb(211, 20, 20);
+  background-color: rgb(241, 243, 242);
+  border: 1px solid rgb(211, 20, 20);
 }
 
 .social__links-block {

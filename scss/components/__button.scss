@@ -15,11 +15,11 @@
   }
 
   &:active {
-    background: $clr-green;
+    @include effects($clr-white, $clr-green, none);
   }
 
-  &:visited {
-    background: $clr-gray;
+  &:disabled {
+    @include effects($clr-white, $clr-gray, none);
   }
 
   &--round {

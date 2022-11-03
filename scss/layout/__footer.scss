@@ -57,6 +57,14 @@
     background-color: $clr-black;
     min-width: 228px;
     padding: 10px;
+
+    &:active {
+      @include effects($clr-white, inherit,  1px solid $clr-green);
+    }
+
+    &:disabled {
+      @include effects($clr-red, inherit, 1px solid $clr-red);
+    }
   }
 
   &__submit {
@@ -64,6 +72,14 @@
     padding: 10px 39px;
     border: 1px solid $clr-black;
     border-radius: 5px;
+
+    &:active {
+      @include effects($clr-green, $clr-gray-light, 1px solid $clr-green);
+    }
+
+    &:disabled {
+      @include effects($clr-red, $clr-gray-light, 1px solid $clr-red);
+    }
   }
 
 }
