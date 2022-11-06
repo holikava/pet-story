@@ -16,7 +16,7 @@
   &__block {
     position: relative;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     margin-bottom: 60px;
   }
 }
@@ -47,5 +47,27 @@
 
   &__date {
     color: $clr-gray-smoky;
+  }
+}
+
+@media (max-width: 991px) {
+  .testimonials {
+
+    &-bg {
+      background-size: 20%;
+      padding-bottom: 140px;
+    }
+
+    &__block {
+      flex-wrap: nowrap;
+    }
+  }
+
+  .autor {
+    flex-basis: 293px;
+
+    &:last-child {
+      display: none;
+    }
   }
 }

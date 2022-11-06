@@ -12,8 +12,13 @@
     background-repeat: no-repeat;
   }
 
+  &__image {
+    flex: 0 1 50%;
+  }
+
   &__content {
-    flex-basis: 40%;
+    flex: 1 0 45%;
+    max-width: 465px;
   }
 
   &__title {
@@ -26,5 +31,20 @@
     font-weight: $fw-regular;
     margin-top: 30px;
     margin-bottom: 15px;
+  }
+}
+
+@media (max-width: 991px) {
+  .explanation {
+    padding-top: 100px;
+    padding-bottom: 142px;
+
+    &-bg {
+      background-image: none;
+    }
+
+    &__content {
+      margin-left: 31px;
+    }
   }
 }

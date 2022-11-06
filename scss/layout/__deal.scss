@@ -2,6 +2,7 @@
   text-align: center;
   background-color: rgba(253, 253, 255, 0.5);
   border-radius: 20px;
+  padding-top: 40px;
   padding-bottom: 60px;
 
   &-bg {
@@ -12,7 +13,6 @@
 
   &__content {
     max-width: 90%;
-    padding-top: 40px;
     margin: 0 auto 60px;
   }
 
@@ -39,7 +39,7 @@
     display: flex;
     justify-content: space-around;
     align-items: flex-start;
-    max-width: 70%;
+    max-width: 80%;
     margin: 0 auto;
     margin-bottom: 60px;
   }
@@ -58,22 +58,28 @@
     margin-bottom: 30px;
   }
 
-  &__image::before {
-    display: block;
-    content: "";
-    position: absolute;
-    top: calc(168px/2 - 37px/2); // parent height - arrow height
-    right: -50%;
-    width: 70px;
-    height: 37px;
-    background-image: url(../../assets/icon/arrow.svg);
-  }
-
-  &__image > img {
+  &__image>img {
     margin: auto;
   }
 }
 
-.last-child::before { // Дополнительный класс, чтобы достучаться до последней стрелки в .infographic__image::before
-  display: none;
+@media (max-width: 991px) {
+  .deal {
+    padding-top: 30px;
+    padding-bottom: 50px;
+
+
+    &-bg {
+      padding-top: 30px;
+      padding-bottom: 50px;
+    }
+  }
+
+  .infographic {
+    margin-bottom: 50px;
+
+    &__block {
+      max-width: 80%;
+    }
+  }
 }

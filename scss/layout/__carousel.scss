@@ -7,7 +7,7 @@
 
   &-bg {
     background: url(../../assets/image/explanation-bg-2.png) bottom right,
-    url(../../assets/image/explanation-bg-3.png) bottom left;
+      url(../../assets/image/explanation-bg-3.png) bottom left;
     background-repeat: no-repeat;
   }
 
@@ -44,51 +44,72 @@
   }
 }
 
-.card {
-  @include border(5px);
-  background-color: $clr-white;
+@media (max-width: 991px) {
+  .carousel {
 
-  &__image {
-    border-top-left-radius: 5px;
-    border-top-right-radius: 5px;
-  }
+    &-bg {
+      background-size: 20%;
+    }
 
-  &__text {
-    position: relative;
-    padding-left: 16px;
-  }
+    &::before {
+      display: none;
+    }
 
-  &__link {
-    font-weight: $fw-bold;
-    color: $clr-black;
-    text-transform: uppercase;
-  }
+    &::after {
+      display: none
+    }
 
-  &__subtite {
-    font-size: $fs-subtext;
-    font-weight: $fw-light;
-    padding-bottom: 16px;
+    &__btn {
+      padding-bottom: 140px;
+    }
   }
 }
 
-.vegies-eater::after {
-  display: block;
-  content: "";
-  width: 33px;
-  height: 37px;
-  position: absolute;
-  top: 8px;
-  right: 8px;
-  background-image: url(../../assets/icon/vegies-icon.png);
-}
+  .card {
+    @include border(5px);
+    background-color: $clr-white;
 
-.meat-eater::after {
-  display: block;
-  content: "";
-  width: 48px;
-  height: 38px;
-  position: absolute;
-  top: 8px;
-  right: 8px;
-  background-image: url(../../assets/icon/meat-icon.png);
-}
+    &__image {
+      border-top-left-radius: 5px;
+      border-top-right-radius: 5px;
+    }
+
+    &__text {
+      position: relative;
+      padding-left: 16px;
+    }
+
+    &__link {
+      font-weight: $fw-bold;
+      color: $clr-black;
+      text-transform: uppercase;
+    }
+
+    &__subtite {
+      font-size: $fs-subtext;
+      font-weight: $fw-light;
+      padding-bottom: 16px;
+    }
+  }
+
+  .vegies-eater::after {
+    display: block;
+    content: "";
+    width: 33px;
+    height: 37px;
+    position: absolute;
+    top: 8px;
+    right: 8px;
+    background-image: url(../../assets/icon/vegies-icon.png);
+  }
+
+  .meat-eater::after {
+    display: block;
+    content: "";
+    width: 48px;
+    height: 38px;
+    position: absolute;
+    top: 8px;
+    right: 8px;
+    background-image: url(../../assets/icon/meat-icon.png);
+  }

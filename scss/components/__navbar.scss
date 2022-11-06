@@ -3,6 +3,9 @@
   justify-content: space-between;
   list-style: none;
 
+  & > li:last-of-type > a {
+    padding-right: 0;
+  }
 
   &__link {
     color: $clr-white;
@@ -10,6 +13,10 @@
     text-decoration: none;
     padding: 29px;
     @include transition;
+
+    &--active {
+      color: $clr-orange;
+    }
     
     &:hover {
       color: $clr-orange;

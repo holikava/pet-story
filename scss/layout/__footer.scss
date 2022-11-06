@@ -6,10 +6,10 @@
   &--grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    grid-template-areas: 
-    "logo logo subscribe"
-    "btn btn btn"
-    "social__link navbar copyright";
+    grid-template-areas:
+      "logo logo subscribe"
+      "btn btn btn"
+      "social__link navbar copyright";
   }
 
   &__logo {
@@ -19,6 +19,7 @@
 
   &__subscribe {
     grid-area: subscribe;
+    justify-self: end;
   }
 
   &__btn {
@@ -36,10 +37,22 @@
   }
 
   &__copyright {
-    grid-area: copyright ;
+    grid-area: copyright;
     justify-self: end;
     align-self: end;
     max-width: 61%;
+  }
+}
+
+@media (max-width: 991px) {
+  .footer {
+
+    &--grid {
+      grid-template-areas:
+        "logo subscribe subscribe"
+        "btn btn btn"
+        "social__link navbar copyright";
+    }
   }
 }
 
@@ -59,7 +72,7 @@
     padding: 10px;
 
     &:active {
-      @include effects($clr-white, inherit,  1px solid $clr-green);
+      @include effects($clr-white, inherit, 1px solid $clr-green);
     }
 
     &:disabled {
@@ -86,30 +99,46 @@
 
 .social {
 
-  &__links-block {
-    margin-bottom: 10px;
-
-    &:last-child {
-      margin-bottom: 0;
-    }
-  }
-
-  &__logo {
-    display: inline-flex;
-    width: 26px;
-    height: 26px;
-    border-radius: 50%;
-    background-color: $clr-gray;
-    vertical-align: middle;
-
-    & > img {
-      margin: auto;
-    }
-  }
-
   &__link {
     color: $clr-white;
-    padding-left: 12px;
+    margin-top: 10px;
+
+    &:active {
+      color: $clr-green;
+
+      &::before {
+        background-color: $clr-green;
+      }
+    }
+
+    &::before {
+      content: "";
+      display: inline-block;
+      width: 26px;
+      height: 26px;
+      border-radius: 50%;
+      background-color: $clr-gray;
+      vertical-align: middle;
+      background-repeat: no-repeat;
+      background-position: center;
+      margin-right: 12px;
+    }
+
+    &[href*="facebook"]::before {
+      background-image: url(../../assets/icon/facebook-icon.png);
+    }
+
+    &[href*="twitter"]::before {
+      background-image: url(../../assets/icon/twitter-icon.png);
+    }
+
+    &[href*="instagram"]::before {
+      background-image: url(../../assets/icon/instagram-icon.png);
+    }
+
+    &[href*="youtube"]::before {
+      background-image: url(../../assets/icon/youtube-icon.png);
+    }
   }
 }
 

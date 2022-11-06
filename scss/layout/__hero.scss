@@ -31,6 +31,22 @@
       height: 465px;
       border-radius: 50%;
       background: $clr-orange $clr-btn-gradient;
+      z-index: -1;
+    }
+  }
+}
+
+@media (max-width: 991px) {
+  .hero {
+    padding-bottom: 47px;
+
+    &__title {
+      font-size: 85px;
+
+      &::before {
+        width: 367px;
+        height: 367px;
+      }
     }
   }
 }
